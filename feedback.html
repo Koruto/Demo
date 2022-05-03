@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Feedback</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <nav>
+        <ul class="nav">
+          <li><a href="about.html" class="nav__link">About</a></li>
+          <li><a href="feedback.html" class="nav__link">Feedback</a></li>
+          <li><a href="event.html" class="nav__link">Event</a></li>
+          <li><a href="index.html" class="nav__link">Home</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- <div class="feedbackForm">
+      <form>
+        <label for="fname">First name:</label><br />
+        <input type="text" id="fname" name="fname" /><br />
+        <label for="lname">Last name:</label><br />
+        <input type="text" id="lname" name="lname" /><br />
+        <label for="email">Enter your email:</label><br />
+        <input type="email" id="email" name="email" /><br />
+        <label for="w3review">Your Feedback</label><br />
+
+        <textarea id="review" name="review"> </textarea><br />
+        <input type="submit" value="Submit" />
+      </form>
+    </div> -->
+    <p class="gradientText feedBack">FeedBack Form</p>
+    <div id="feedback-main">
+      <div id="feedback-div">
+        <form
+          action="contact.php"
+          method="post"
+          class="form"
+          id="feedback-form1"
+          name="form1"
+          enctype="multipart/form-data"
+        >
+          <p class="name">
+            <input
+              name="name"
+              type="name"
+              class="validate[required,custom[onlyLetter],length[0,100]] feedback-input"
+              required
+              placeholder="Name"
+              id="feedback-name"
+            />
+          </p>
+
+          <p class="email">
+            <input
+              name="email"
+              type="email"
+              class="validate[required,custom[email]] feedback-input"
+              id="feedback-email"
+              placeholder="Email"
+              required
+            />
+          </p>
+
+          <p class="text">
+            <textarea
+              name="comment"
+              type="comment"
+              class="validate[required,length[6,300]] feedback-input"
+              id="feedback-comment"
+              required
+              placeholder="Hey, I really love the site but I believe that you could incorporate some ..... and also get rid of the ...... on the section."
+            ></textarea>
+          </p>
+
+          <div class="feedback-submit">
+            <input type="submit" value="SEND" id="feedback-button-blue" />
+            <div class="feedback-ease"></div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="bottomBox">
+        <div class="followUs">
+          <a href="#" class="fa fa-facebook fa-2x"></a>
+          <a href="#" class="fa fa-linkedin fa-2x"></a>
+          <a href="#" class="fa fa-instagram fa-2x"></a>
+          <a href="#" class="fa fa-twitter fa-2x"></a>
+        </div>
+        <hr />
+        <div class="quickLinks">
+          <p class="upperCase">Quick Links</p>
+          <a
+            href="http://"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="gradientText"
+            >Event
+          </a>
+          <a
+            href="http://"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="gradientText"
+            >Feedback</a
+          >
+          <a
+            href="http://"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="gradientText"
+            >About</a
+          >
+        </div>
+        <hr />
+        <div class="contactDetails">
+          <p class="upperCase t">Contact Us</p>
+          <p class="gradientText">Email: blablablablabla@blabla.com</p>
+          <p class="gradientText">Phone Number: 9753753795</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

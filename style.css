@@ -1,0 +1,737 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+:root {
+    --level-1: #8dccad;
+    --level-2: #f5cc7f;
+    --level-3: #7b9fe0;
+    --level-4: #f27c8d;
+    --black: black;
+  }
+  ol {
+    list-style: none;
+  }
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+    /* perspective:800px; */
+}
+
+.nav{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row-reverse;
+   /* background: linear-gradient(117.5deg, rgb(89, 233, 162) 20.5%, rgb(29, 209, 185) 100.2%); */
+   background-color: #3bb78f;
+background-image: linear-gradient(315deg, #3bb78f 0%, #0bab64 74%);
+    text-decoration: none;
+    padding: 20px 0;
+}
+
+.nav__link{
+    padding: 0 50px;
+    font-size: 20px;
+    text-decoration: none;
+    color:  #f8f8ff;
+}
+
+
+
+.greetingCard{
+    height: 90vh;
+    background-image: linear-gradient(to right , rgba(255, 255, 255, 0.95) 1%, rgba(255, 255, 255, 0.05) 74%),url(pexels-janko-ferlic-603189.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+
+.firstLine{
+position: absolute;
+top:40%;
+left:80%;
+transform: translate(-50%,-50%);
+text-transform: uppercase;
+font-size: 40px;
+color: #f8f8ff;
+font-family: 'Quicksand', sans-serif;
+letter-spacing: 1px;
+border-bottom: 2px solid white;
+animation: example 1s linear ;
+}
+
+.secondLine{
+    position: absolute;
+    top:45%;
+    left:80%;
+    transform: translate(-50%,-50%);
+    text-transform: uppercase;
+    color: aliceblue;
+    font-family: 'Amatic SC', cursive;
+    
+}
+
+
+
+/* .contactDetails{
+    /* background-image: linear-gradient(315deg, #3bb78f 0%, #0bab64 74%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+     
+    
+} */
+
+.gradientText{
+    background-image: linear-gradient(315deg, #3bb78f 0%, #0bab64 74%);
+    -webkit-background-clip: text;  
+    background-clip: text;
+    background-size: 100%;
+    -webkit-text-fill-color: transparent;
+}
+
+.upperCase{
+    text-transform: uppercase;
+}
+
+.middle{
+    display: flex;
+    flex-direction: row;
+    height: 500px;
+    background-color: #e2e4ef;
+    justify-content: space-around;
+}
+
+.middleText h1,.middleText h3{
+text-align: center;
+padding: 50px;
+}
+
+.midImage{
+    height: 500px;
+}
+
+
+
+.bottomBox{
+    height: 200px;
+    background-color: #2c2e30;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    -ms-flex-align: start;
+    padding: 30px 0;
+    margin: 50px 0 0 0;
+    
+Width: 100%;
+bottom: 0;
+    
+
+}
+
+.bottomBox :link{
+    text-decoration: none;
+    padding: 5px 0;
+    
+}
+
+.followUs{
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+  }
+
+  .fa:hover{
+    transform: scale(1.1,1.1);
+  }
+
+  .fa-facebook {
+   
+    color: #4267B2;
+  }
+
+  .fa-twitter {
+    color: #55ACEE;
+    
+  }
+  .fa-linkedin {
+    color:#0072b1;
+    
+  }
+  .fa-instagram {
+    color: #8a3ab9;
+    
+  }
+
+
+
+.quickLinks{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    
+}
+
+.quickLinks p, .contactDetails p{
+    
+    padding-bottom: 20px;
+    color: whitesmoke;
+}
+
+.quickLinks a:hover{
+    border-bottom: whitesmoke 2px solid;
+    transform: scale(1.05,1.05);
+}
+
+/* Event Page CSS*/
+
+.eventTimeline{
+    text-align: center;
+    font-size: 50px;
+    padding: 20px 0;
+}
+
+.timeline{
+    width:100%;
+    background-color:#072736;
+    color:#fff;
+    padding:30px 20px;
+    box-shadow:0px 0px 10px rgba(0,0,0,.5);
+    display: block;
+   
+  }
+  .timeline ul{
+    list-style-type:none;
+    border-left:2px solid #094a68;
+    padding:10px 5px;
+  }
+  .timeline ul li{
+    padding:20px 20px;
+    position:relative;
+    cursor:pointer;
+    transition:.5s;
+  }
+  .timeline ul li span{
+    display:inline-block;
+    background-color:#1685b8;
+    border-radius:25px;
+    padding:2px 5px;
+    font-size:15px;
+    text-align:center;
+  }
+  .timeline ul li .content h3{
+    color:#34ace0;
+    font-size:17px;
+    padding-top:5px;
+  }
+  .timeline ul li .content p{
+    padding:5px 0px 15px 0px;
+    font-size:15px;
+  }
+  .timeline ul li:before{
+    position:absolute;
+    content:'';
+    width:10px;
+    height:10px;
+    background-color:#34ace0;
+    border-radius:50%;
+    left:-11px;
+    top:28px;
+    transition:.5s;
+  }
+  .timeline ul li:hover{
+    background-color:#071f2a;
+  }
+  .timeline ul li:hover:before{
+    background-color:#0F0;
+    box-shadow:0px 0px 10px 2px #0F0;
+  }
+  @media (max-width:300px){
+    .timeline{
+      width:100%;
+      padding:30px 5px 30px 10px;
+    }
+    .timeline ul li .content h3{
+      color:#34ace0;
+      font-size:15px;
+    }
+  
+  }
+
+  /* About Page CSS*/
+
+.details{
+    text-transform: uppercase;
+    text-align: center;
+    padding: 50px 0;
+    font-size: 100px;
+}
+
+  .container {
+    max-width: 1000px;
+    padding: 0 10px;
+    margin: 0 auto;
+  }
+  
+  .rectangle {
+    position: relative;
+    padding: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+  }
+  
+  
+  /* LEVEL-1 STYLES
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+  .level-1 {
+    width: 50%;
+    margin: 0 auto 40px;
+    background: var(--level-1);
+  }
+  
+  .level-1::before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 20px;
+    background: var(--black);
+  }
+  
+  
+  /* LEVEL-2 STYLES
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+  .level-2-wrapper {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .level-2-wrapper::before {
+    content: "";
+    position: absolute;
+    top: -20px;
+    left: 25%;
+    width: 50%;
+    height: 2px;
+    background: var(--black);
+  }
+  
+  .level-2-wrapper::after {
+    display: none;
+    content: "";
+    position: absolute;
+    left: -20px;
+    bottom: -20px;
+    width: calc(100% + 20px);
+    height: 2px;
+    background: var(--black);
+  }
+  
+  .level-2-wrapper li {
+    position: relative;
+  }
+  
+  .level-2-wrapper > li::before {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 20px;
+    background: var(--black);
+  }
+  
+  .level-2 {
+    width: 70%;
+    margin: 0 auto 40px;
+    background: var(--level-2);
+  }
+  
+  .level-2::before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 20px;
+    background: var(--black);
+  }
+  
+  .level-2::after {
+    display: none;
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    transform: translate(-100%, -50%);
+    width: 20px;
+    height: 2px;
+    background: var(--black);
+  }
+  
+  
+  /* LEVEL-3 STYLES
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+  .level-3-wrapper {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 20px;
+    width: 90%;
+    margin: 0 auto;
+  }
+  
+  .level-3-wrapper::before {
+    content: "";
+    position: absolute;
+    top: -20px;
+    left: calc(25% - 5px);
+    width: calc(50% + 10px);
+    height: 2px;
+    background: var(--black);
+  }
+  
+  .level-3-wrapper > li::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -100%);
+    width: 2px;
+    height: 20px;
+    background: var(--black);
+  }
+  
+  .level-3 {
+    margin-bottom: 20px;
+    background: var(--level-3);
+  }
+  
+  
+  /* LEVEL-4 STYLES
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+  .level-4-wrapper {
+    position: relative;
+    width: 80%;
+    margin-left: auto;
+  }
+  
+  .level-4-wrapper::before {
+    content: "";
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    width: 2px;
+    height: calc(100% + 20px);
+    background: var(--black);
+  }
+  
+  .level-4-wrapper li + li {
+    margin-top: 20px;
+  }
+  
+  .level-4 {
+    font-weight: normal;
+    background: var(--level-4);
+  }
+  
+  .level-4::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    transform: translate(-100%, -50%);
+    width: 20px;
+    height: 2px;
+    background: var(--black);
+  }
+  
+  
+  /* MQ STYLES
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+  @media screen and (max-width: 700px) {
+    .rectangle {
+      padding: 20px 10px;
+    }
+  
+    .level-1,
+    .level-2 {
+      width: 100%;
+    }
+  
+    .level-1 {
+      margin-bottom: 20px;
+    }
+  
+    .level-1::before,
+    .level-2-wrapper > li::before {
+      display: none;
+    }
+    
+    .level-2-wrapper,
+    .level-2-wrapper::after,
+    .level-2::after {
+      display: block;
+    }
+  
+    .level-2-wrapper {
+      width: 90%;
+      margin-left: 10%;
+    }
+  
+    .level-2-wrapper::before {
+      left: -20px;
+      width: 2px;
+      height: calc(100% + 40px);
+    }
+  
+    .level-2-wrapper > li:not(:first-child) {
+      margin-top: 50px;
+    }
+  }
+  
+  
+  /* FOOTER
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+  .page-footer {
+    position: fixed;
+    right: 0;
+    bottom: 20px;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+  }
+  
+  .page-footer a {
+    margin-left: 4px;
+  }
+
+
+  /* Feeback CSS*/
+.feedBack{
+    text-align: center;
+    font-size: 80px;
+    padding: 20px 0 5px 0;
+}
+
+  .feedback-button {
+    height: 40px;
+    border: solid 3px #CCCCCC;
+    background: #333;
+    width: 100px;
+    line-height: 32px;
+    -webkit-transform: rotate(-90deg);
+    font-weight: 600;
+    color: white;
+    transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    text-align: center;
+    font-size: 17px;
+    position: fixed;
+    right: -40px;
+    top: 45%;
+    font-family: "Roboto", helvetica, arial, sans-serif;
+    z-index: 999;
+  }
+  
+  #feedback-main {
+    display: block;
+    float: left;
+    padding-top: 0px;
+    /* background-color: #0493bd; */
+  }
+  
+  #feedback-div {
+    background-color: rgba(72, 72, 72, 0.4);
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-top: 35px;
+    padding-bottom: 50px;
+    width: 450px;
+    float: left;
+    left: 50%;
+    /* position: absolute; */
+    margin-top: 30px;
+    margin-left: 500px;
+    border-radius: 7px;
+    -moz-border-radius: 7px;
+    -webkit-border-radius: 7px;
+    
+  }
+  
+  .feedback-input {
+    color: #3c3c3c;
+    font-family: "Roboto", helvetica, arial, sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    border-radius: 0;
+    line-height: 22px;
+    background-color: #fbfbfb;
+    padding: 13px 13px 13px 54px;
+    margin-bottom: 10px;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 3px solid rgba(0, 0, 0, 0);
+  }
+  
+  .feedback-input:focus {
+    background: #fff;
+    box-shadow: 0;
+    border: 3px solid #3498db;
+    color: #3498db;
+    outline: none;
+    padding: 13px 13px 13px 54px;
+  }
+  
+  
+  /* Icons ---------------------------------- */
+  
+  #feedback-name {
+    background-image: url(http://rexkirby.com/kirbyandson/images/name.svg);
+    background-size: 30px 30px;
+    background-position: 11px 8px;
+    background-repeat: no-repeat;
+  }
+  
+  #feedback-name:focus {
+    background-image: url(http://rexkirby.com/kirbyandson/images/name.svg);
+    background-size: 30px 30px;
+    background-position: 8px 5px;
+    background-position: 11px 8px;
+    background-repeat: no-repeat;
+  }
+  
+  #feedback-email {
+    background-image: url(http://rexkirby.com/kirbyandson/images/email.svg);
+    background-size: 30px 30px;
+    background-position: 11px 8px;
+    background-repeat: no-repeat;
+  }
+  
+  #feedback-email:focus {
+    background-image: url(http://rexkirby.com/kirbyandson/images/email.svg);
+    background-size: 30px 30px;
+    background-position: 11px 8px;
+    background-repeat: no-repeat;
+  }
+  
+  #feedback-comment {
+    background-image: url(http://rexkirby.com/kirbyandson/images/comment.svg);
+    background-size: 30px 30px;
+    background-position: 11px 8px;
+    background-repeat: no-repeat;
+  }
+  
+  #feedback-comment {
+    width: 100%;
+    height: 150px;
+    line-height: 150%;
+    resize: vertical;
+  }
+  
+  input:hover,
+  #feedback-comment:hover,
+  input:focus,
+  #feedback-comment:focus {
+    background-color: white;
+  }
+  
+  #feedback-button-blue {
+    font-family: "Roboto", helvetica, arial, sans-serif;
+    float: left;
+    width: 100%;
+    border: #fbfbfb solid 4px;
+    cursor: pointer;
+    background-color: #3498db;
+    color: white;
+    font-size: 24px;
+    padding-top: 22px;
+    padding-bottom: 22px;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+    margin-top: -4px;
+    font-weight: 700;
+  }
+  
+  #feedback-button-blue:hover {
+    background-color: rgba(0, 0, 0, 0);
+    color: #0493bd;
+  }
+  
+  .feedback-button-blue:hover {
+    color: #3498db;
+  }
+  
+  .feedback-ease {
+    width: 0px;
+    height: 74px;
+    background-color: #fbfbfb;
+    -webkit-transition: .3s ease;
+    -moz-transition: .3s ease;
+    -o-transition: .3s ease;
+    -ms-transition: .3s ease;
+    transition: .3s ease;
+  }
+  
+  .feedback-submit:hover .feedback-ease {
+    width: 100%;
+    background-color: white;
+  }
+  
+  @media only screen and (max-width: 580px) {
+    #feedback-div {
+      left: 3%;
+      margin-right: 3%;
+      width: 88%;
+      margin-left: 0;
+      padding-left: 3%;
+      padding-right: 3%;
+    }
+  }
+
+  @keyframes example {
+    0%   {
+        
+        opacity: 0;}
+    
+    100% {opacity: 1;}
+  }
+
+
+  @media only screen and (max-width: 1455px) {
+    .firstLine{
+        font-size: 30px;
+    }
+
+    .secondLine{
+        font-size: 15px;
+    }
+  }
+  @media only screen and (max-width: 1260px) {
+    .firstLine{
+        font-size: 20px;
+    }
+
+    .secondLine{
+        font-size: 10px;
+    }
+  }
